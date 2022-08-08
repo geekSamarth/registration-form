@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.form{
+    width: 100vw;
+    height: 100vh;
+    background: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 500px;
+    height: 520px;
+    border-radius: 4px;
+    background: #fff;
+    margin: auto;
+    padding: 5px 10px;
+    box-shadow: 13px 13px 25px -4px rgba(0,0,0,0.71);
+-webkit-box-shadow: 13px 13px 25px -4px rgba(0,0,0,0.71);
+-moz-box-shadow: 13px 13px 25px -4px rgba(0,0,0,0.71);
+}
+.form-entry h2{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.form-entry{
+    display: inline-block;
+}
+label{
+    font-size: 18px;
+}
+input{
+    display: inline-block;
+    width: 100%;
+    height: 35px;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    padding: 8px;
+    margin: 10px 0;
+    font-size: 16px;
+    background-color: #f7f7f7;
+}
+input[type=phone]{
+    width: 86%;
+}
+select{
+    display: inline-block;
+    width: 13%;
+    height: 35px;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    background-color: #f7f7f7;
+}
+.btn{
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+input[type=text]:focus,input[type=email]:focus,input[type=password]:focus,input[type=phone]:focus{
+    outline: none;
+    background-color:#ddd ;
+    color: black;
+}
+select:focus{
+    background-color: #ddd;
+}
+.btn:hover{
+    background-color: #0eb7f4;
+
+    color: #fff;
+    transition: all 0.2s ease-in;
+
+}
+/* for responsive design of the website */
+@media screen and (max-width: 550px){
+    .container{
+        width: 300px;
+    }
+    select{
+        width: 16%;
+    }
+    input[type=phone]{
+        width: 82%;
+    }
+}
